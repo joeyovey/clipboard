@@ -83,11 +83,178 @@ p {
   border-radius: 5px;
 }
 
-footer {
-  background-color: #ddd;
-  padding: 20px;
-  margin-top: 20px;
+/* Feature-section */
+.features-section {
+  padding: 60px 0;
+  background-color: #fff;
 }
+
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  gap: 50px;
+}
+
+.features-image img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.features-content {
+  max-width: 450px;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features-image img {
+    max-width: 80%;
+  }
+
+  .features-content {
+    max-width: 90%;
+  }
+}
+
+/* Icons section */
+.icon-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.feature-box {
+  max-width: 300px;
+}
+
+.feature-icon img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .icon-features {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Partner section */
+.partners{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Footer section */
+.footer {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 50px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a img {
+  width: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer-social a img:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -229,7 +396,7 @@ footer {
     <div class="challenge">
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Joeyovey</a>.
+        Coded by <a href="https://github.com/joeyovey">Joeyovey</a>.
       </p>
     </div>
   </footer>
