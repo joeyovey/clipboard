@@ -10,11 +10,81 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    *{
-      padding: 0;
-      margin: 0;
-      
-    }
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: white;
+  padding: 50px 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #26C6DA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn.mac {
+  background-color: #FF6F61;
+}
+
+.features, .access, .workflow {
+  background-color: white;
+  padding: 50px 20px;
+  margin-top: 20px;
+}
+
+.feature-list, .workflow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.feature, .workflow-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 20px;
+  margin-top: 20px;
+}
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     
@@ -45,7 +115,7 @@
   <section class="features-section">
     <div class="features-container">
       <div class="features-image">
-        <img src="images/monitor-mockup.png" alt="Monitor Mockup">
+        <img src="images/image-computer.png" alt="Monitor Mockup">
       </div>
       <div class="features-content">
         <div class="feature">
@@ -72,35 +142,44 @@
   
   <!-- image section -->
   <section class="section-image">
-    <img src="" alt="section image">
+    <img src="images/image-devices.png" alt="section image">
 </section>
 
   <!-- Workflow section -->
-  <section class="workflow">
-    <h2>Supercharge your workflow</h2>
-    <div class="workflow-list">
-      <div class="workflow-item">
-        <h3>Create blacklists</h3>
-        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-      </div>
-      <div class="workflow-item">
-        <h3>Plain text snippets</h3>
-        <p>Remove unwanted formatting from copied text for a consistent look.</p>
-      </div>
-      <div class="workflow-item">
-        <h3>Sneak preview</h3>
-        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-      </div>
+  <section class="icon-features">
+  <div class="feature-box">
+    <div class="feature-icon">
+      <img src="images/icon-blacklist.svg" alt="Blacklist Icon">
     </div>
-  </section>
+    <h3>Create blacklists</h3>
+    <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="feature-icon">
+      <img src="images/icon-text.svg" alt="Text Snippet Icon">
+    </div>
+    <h3>Plain text snippets</h3>
+    <p>Remove unwanted formatting from copied text for a consistent look.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="feature-icon">
+      <img src="images/icon-preview.svg" alt="Preview Icon">
+    </div>
+    <h3>Sneak preview</h3>
+    <p>Quick preview of all snippets on your clipboard for easy access.</p>
+  </div>
+</section>
+
 
   <!-- Partners section -->
   <section class="partners">
-    <img src="" alt="Google">
-    <img src="" alt="IBM">
-    <img src="" alt="Microsoft">
-    <img src="" alt="HP">
-    <img src="" alt="Vector Graphics">
+    <img src="images/logo-google.png" alt="Google">
+    <img src="images/logo-ibm.png" alt="IBM">
+    <img src="images/logo-microsoft.png" alt="Microsoft">
+    <img src="images/logo-hp.png" alt="HP">
+    <img src="images/logo-vector-graphics.png" alt="Vector Graphics">
 
   </section>
 
